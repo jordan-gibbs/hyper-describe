@@ -83,7 +83,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 if uploaded_file is not None and api_key:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Image.', width=300)
+    st.image(image, width=300)
     st.write("")
 
     with open("temp_image.jpg", "wb") as f:
