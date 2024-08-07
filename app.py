@@ -74,7 +74,7 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="auto",
 )
-with open( "app\style.css" ) as css:
+with open("style.css") as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 st.title("🔍Hyper-Detail Image Describer")
 st.subheader("Upload an image to get a painstakingly detailed description.")
