@@ -67,7 +67,21 @@ def get_image_description(api_key, image_path):
 
     return description
 
+
+hide_streamlit_style = """
+            <style>
+            #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 # Streamlit app
+
+
 st.set_page_config(
     page_title="Hyper-Detail Image Describer",
     page_icon="🔍",  # You can choose any emoji as the icon
