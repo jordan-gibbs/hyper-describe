@@ -68,6 +68,20 @@ def get_image_description(api_key, image_path):
     return description
 
 
+
+
+
+# Streamlit app
+st.set_page_config(
+    page_title="Hyper-Detail Image Describer",
+    page_icon="🔍",  # You can choose any emoji as the icon
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+
+with open("style.css") as css:
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+
 hide_streamlit_style = """
             <style>
             #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}
@@ -78,18 +92,6 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
-# Streamlit app
-
-
-st.set_page_config(
-    page_title="Hyper-Detail Image Describer",
-    page_icon="🔍",  # You can choose any emoji as the icon
-    layout="centered",
-    initial_sidebar_state="auto",
-)
-with open("style.css") as css:
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 st.title("🔍Hyper-Detail Image Describer")
 st.subheader("Upload an image to get a painstakingly detailed description.")
 
