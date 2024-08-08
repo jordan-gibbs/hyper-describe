@@ -75,7 +75,7 @@ def get_image_description(api_key, image_path):
 st.set_page_config(
     page_title="Hyper-Detail Image Describer",
     page_icon="🔍",  # You can choose any emoji as the icon
-    layout="wide"
+    layout="wide",
     initial_sidebar_state="auto",
 )
 
