@@ -93,7 +93,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("🔍Hyper-Detail Image Describer")
-st.subheader("Upload an image to get a painstakingly detailed description.")
+st.markdown("#### Upload an image to get a painstakingly detailed description.")
 
 api_key = os.getenv("OPENAI_API_KEY")
 
